@@ -3,107 +3,181 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A71637E254FF1E500181989 /* attestationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71637D254FF1E500181989 /* attestationApp.swift */; };
-		3A716380254FF1E500181989 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A71637F254FF1E500181989 /* ContentView.swift */; };
-		3A716382254FF1E500181989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A716381254FF1E500181989 /* Assets.xcassets */; };
-		3A716385254FF1E500181989 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A716384254FF1E500181989 /* Preview Assets.xcassets */; };
+		3A04ED3E2559FCC100C8F41B /* formTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04ED2B2559FCBF00C8F41B /* formTestApp.swift */; };
+		3A04ED422559FCC100C8F41B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A04ED2D2559FCC100C8F41B /* Assets.xcassets */; };
+		3A22008B2563C1870052D7D6 /* Attestation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22008A2563C1870052D7D6 /* Attestation.swift */; };
+		3A2200902563CABA0052D7D6 /* AttestationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22008F2563CABA0052D7D6 /* AttestationList.swift */; };
+		3A2200932563CF5A0052D7D6 /* AttestationCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2200922563CF5A0052D7D6 /* AttestationCreator.swift */; };
+		3A220099256408560052D7D6 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220098256408560052D7D6 /* Generator.swift */; };
+		3A22009D25641B300052D7D6 /* AttestationViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22009C25641B300052D7D6 /* AttestationViewer.swift */; };
+		3AE8B03E255F3BCC00619A21 /* PersonCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B03D255F3BCC00619A21 /* PersonCreator.swift */; };
+		3AE8B047255F492400619A21 /* PersonEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B046255F492400619A21 /* PersonEditor.swift */; };
+		3AE8B04F255F55F900619A21 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B04E255F55F900619A21 /* Person.swift */; };
+		3AE8B055255F563200619A21 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B054255F563200619A21 /* Database.swift */; };
+		3AE8B060255F594600619A21 /* PersonForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B05F255F594600619A21 /* PersonForm.swift */; };
+		3AE8B065255F5A6000619A21 /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B064255F5A6000619A21 /* PersonList.swift */; };
+		3AE8B074255F5F0700619A21 /* Slab in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE8B073255F5F0700619A21 /* Slab */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A71637A254FF1E500181989 /* attestation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = attestation.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A71637D254FF1E500181989 /* attestationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attestationApp.swift; sourceTree = "<group>"; };
-		3A71637F254FF1E500181989 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3A716381254FF1E500181989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A716384254FF1E500181989 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3A716386254FF1E500181989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A04ED2B2559FCBF00C8F41B /* formTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formTestApp.swift; sourceTree = "<group>"; };
+		3A04ED2D2559FCC100C8F41B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A04ED322559FCC100C8F41B /* Attestation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attestation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A04ED352559FCC100C8F41B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A22008A2563C1870052D7D6 /* Attestation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attestation.swift; sourceTree = "<group>"; };
+		3A22008F2563CABA0052D7D6 /* AttestationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationList.swift; sourceTree = "<group>"; };
+		3A2200922563CF5A0052D7D6 /* AttestationCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationCreator.swift; sourceTree = "<group>"; };
+		3A220098256408560052D7D6 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
+		3A22009C25641B300052D7D6 /* AttestationViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationViewer.swift; sourceTree = "<group>"; };
+		3AE8B03D255F3BCC00619A21 /* PersonCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCreator.swift; sourceTree = "<group>"; };
+		3AE8B046255F492400619A21 /* PersonEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditor.swift; sourceTree = "<group>"; };
+		3AE8B04E255F55F900619A21 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3AE8B054255F563200619A21 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3AE8B05F255F594600619A21 /* PersonForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonForm.swift; sourceTree = "<group>"; };
+		3AE8B064255F5A6000619A21 /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
+		3AE8B06F255F5E7400619A21 /* Slab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Slab; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3A716377254FF1E500181989 /* Frameworks */ = {
+		3A04ED2F2559FCC100C8F41B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE8B074255F5F0700619A21 /* Slab in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A716371254FF1E500181989 = {
+		3A04ED252559FCBF00C8F41B = {
 			isa = PBXGroup;
 			children = (
-				3A71637C254FF1E500181989 /* attestation */,
-				3A71637B254FF1E500181989 /* Products */,
+				3AE8B06F255F5E7400619A21 /* Slab */,
+				3A04ED2A2559FCBF00C8F41B /* Source */,
+				3A04ED332559FCC100C8F41B /* Products */,
+				3AE8B072255F5F0700619A21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		3A71637B254FF1E500181989 /* Products */ = {
+		3A04ED2A2559FCBF00C8F41B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3A71637A254FF1E500181989 /* attestation.app */,
+				3AE8B04D255F55ED00619A21 /* Model */,
+				3AE8B053255F561000619A21 /* Managers */,
+				3AE8B069255F5B6100619A21 /* Views */,
+				3A04ED2B2559FCBF00C8F41B /* formTestApp.swift */,
+				3A04ED352559FCC100C8F41B /* Info.plist */,
+				3A04ED2D2559FCC100C8F41B /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3A04ED332559FCC100C8F41B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A04ED322559FCC100C8F41B /* Attestation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3A71637C254FF1E500181989 /* attestation */ = {
+		3A22008E2563CAAB0052D7D6 /* Attestations */ = {
 			isa = PBXGroup;
 			children = (
-				3A71637D254FF1E500181989 /* attestationApp.swift */,
-				3A71637F254FF1E500181989 /* ContentView.swift */,
-				3A716381254FF1E500181989 /* Assets.xcassets */,
-				3A716386254FF1E500181989 /* Info.plist */,
-				3A716383254FF1E500181989 /* Preview Content */,
+				3A22008F2563CABA0052D7D6 /* AttestationList.swift */,
+				3A2200922563CF5A0052D7D6 /* AttestationCreator.swift */,
+				3A22009C25641B300052D7D6 /* AttestationViewer.swift */,
 			);
-			path = attestation;
+			path = Attestations;
 			sourceTree = "<group>";
 		};
-		3A716383254FF1E500181989 /* Preview Content */ = {
+		3AE8B04D255F55ED00619A21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3A716384254FF1E500181989 /* Preview Assets.xcassets */,
+				3AE8B04E255F55F900619A21 /* Person.swift */,
+				3A22008A2563C1870052D7D6 /* Attestation.swift */,
+				3A220098256408560052D7D6 /* Generator.swift */,
 			);
-			path = "Preview Content";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AE8B053255F561000619A21 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8B054255F563200619A21 /* Database.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3AE8B069255F5B6100619A21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3A22008E2563CAAB0052D7D6 /* Attestations */,
+				3AE8B06A255F5B6A00619A21 /* People */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3AE8B06A255F5B6A00619A21 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8B064255F5A6000619A21 /* PersonList.swift */,
+				3AE8B05F255F594600619A21 /* PersonForm.swift */,
+				3AE8B03D255F3BCC00619A21 /* PersonCreator.swift */,
+				3AE8B046255F492400619A21 /* PersonEditor.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		3AE8B072255F5F0700619A21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A716379254FF1E500181989 /* attestation */ = {
+		3A04ED312559FCC100C8F41B /* Attestation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A716389254FF1E500181989 /* Build configuration list for PBXNativeTarget "attestation" */;
+			buildConfigurationList = 3A04ED462559FCC100C8F41B /* Build configuration list for PBXNativeTarget "Attestation" */;
 			buildPhases = (
-				3A716376254FF1E500181989 /* Sources */,
-				3A716377254FF1E500181989 /* Frameworks */,
-				3A716378254FF1E500181989 /* Resources */,
+				3A04ED2E2559FCC100C8F41B /* Sources */,
+				3A04ED2F2559FCC100C8F41B /* Frameworks */,
+				3A04ED302559FCC100C8F41B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = attestation;
-			productName = attestation;
-			productReference = 3A71637A254FF1E500181989 /* attestation.app */;
+			name = Attestation;
+			packageProductDependencies = (
+				3AE8B073255F5F0700619A21 /* Slab */,
+			);
+			productName = "formTest (iOS)";
+			productReference = 3A04ED322559FCC100C8F41B /* Attestation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3A716372254FF1E500181989 /* Project object */ = {
+		3A04ED262559FCBF00C8F41B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
-					3A716379254FF1E500181989 = {
+					3A04ED312559FCC100C8F41B = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
 			};
-			buildConfigurationList = 3A716375254FF1E500181989 /* Build configuration list for PBXProject "attestation" */;
+			buildConfigurationList = 3A04ED292559FCBF00C8F41B /* Build configuration list for PBXProject "Attestation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +185,51 @@
 				en,
 				Base,
 			);
-			mainGroup = 3A716371254FF1E500181989;
-			productRefGroup = 3A71637B254FF1E500181989 /* Products */;
+			mainGroup = 3A04ED252559FCBF00C8F41B;
+			productRefGroup = 3A04ED332559FCC100C8F41B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A716379254FF1E500181989 /* attestation */,
+				3A04ED312559FCC100C8F41B /* Attestation */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3A716378254FF1E500181989 /* Resources */ = {
+		3A04ED302559FCC100C8F41B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A716385254FF1E500181989 /* Preview Assets.xcassets in Resources */,
-				3A716382254FF1E500181989 /* Assets.xcassets in Resources */,
+				3A04ED422559FCC100C8F41B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3A716376254FF1E500181989 /* Sources */ = {
+		3A04ED2E2559FCC100C8F41B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A716380254FF1E500181989 /* ContentView.swift in Sources */,
-				3A71637E254FF1E500181989 /* attestationApp.swift in Sources */,
+				3A2200902563CABA0052D7D6 /* AttestationList.swift in Sources */,
+				3A04ED3E2559FCC100C8F41B /* formTestApp.swift in Sources */,
+				3AE8B047255F492400619A21 /* PersonEditor.swift in Sources */,
+				3AE8B065255F5A6000619A21 /* PersonList.swift in Sources */,
+				3A22009D25641B300052D7D6 /* AttestationViewer.swift in Sources */,
+				3AE8B04F255F55F900619A21 /* Person.swift in Sources */,
+				3A22008B2563C1870052D7D6 /* Attestation.swift in Sources */,
+				3AE8B055255F563200619A21 /* Database.swift in Sources */,
+				3AE8B060255F594600619A21 /* PersonForm.swift in Sources */,
+				3AE8B03E255F3BCC00619A21 /* PersonCreator.swift in Sources */,
+				3A220099256408560052D7D6 /* Generator.swift in Sources */,
+				3A2200932563CF5A0052D7D6 /* AttestationCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3A716387254FF1E500181989 /* Debug */ = {
+		3A04ED442559FCC100C8F41B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -197,17 +280,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		3A716388254FF1E500181989 /* Release */ = {
+		3A04ED452559FCC100C8F41B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,82 +334,88 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		3A71638A254FF1E500181989 /* Debug */ = {
+		3A04ED472559FCC100C8F41B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"attestation/Preview Content\"";
 				DEVELOPMENT_TEAM = 7D5NQS3DMM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = attestation/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attestation;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3A71638B254FF1E500181989 /* Release */ = {
+		3A04ED482559FCC100C8F41B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"attestation/Preview Content\"";
 				DEVELOPMENT_TEAM = 7D5NQS3DMM;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = attestation/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attestation;
+				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A716375254FF1E500181989 /* Build configuration list for PBXProject "attestation" */ = {
+		3A04ED292559FCBF00C8F41B /* Build configuration list for PBXProject "Attestation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A716387254FF1E500181989 /* Debug */,
-				3A716388254FF1E500181989 /* Release */,
+				3A04ED442559FCC100C8F41B /* Debug */,
+				3A04ED452559FCC100C8F41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A716389254FF1E500181989 /* Build configuration list for PBXNativeTarget "attestation" */ = {
+		3A04ED462559FCC100C8F41B /* Build configuration list for PBXNativeTarget "Attestation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A71638A254FF1E500181989 /* Debug */,
-				3A71638B254FF1E500181989 /* Release */,
+				3A04ED472559FCC100C8F41B /* Debug */,
+				3A04ED482559FCC100C8F41B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3AE8B073255F5F0700619A21 /* Slab */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Slab;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 3A716372254FF1E500181989 /* Project object */;
+	rootObject = 3A04ED262559FCBF00C8F41B /* Project object */;
 }
