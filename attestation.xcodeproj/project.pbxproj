@@ -14,6 +14,28 @@
 		3A2200932563CF5A0052D7D6 /* AttestationCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2200922563CF5A0052D7D6 /* AttestationCreator.swift */; };
 		3A220099256408560052D7D6 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220098256408560052D7D6 /* Generator.swift */; };
 		3A22009D25641B300052D7D6 /* AttestationViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22009C25641B300052D7D6 /* AttestationViewer.swift */; };
+		3A220122256574760052D7D6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2200AE25656D7C0052D7D6 /* WidgetKit.framework */; };
+		3A220123256574760052D7D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2200B025656D7C0052D7D6 /* SwiftUI.framework */; };
+		3A220126256574760052D7D6 /* AttestationWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220125256574760052D7D6 /* AttestationWidget.swift */; };
+		3A220128256574770052D7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A220127256574770052D7D6 /* Assets.xcassets */; };
+		3A22012C256574770052D7D6 /* AttestationWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A220121256574760052D7D6 /* AttestationWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A220133256574C40052D7D6 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220132256574C40052D7D6 /* WidgetContent.swift */; };
+		3A220134256574C40052D7D6 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220132256574C40052D7D6 /* WidgetContent.swift */; };
+		3A220139256574E10052D7D6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B04E255F55F900619A21 /* Person.swift */; };
+		3A22013C256574E30052D7D6 /* Attestation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22008A2563C1870052D7D6 /* Attestation.swift */; };
+		3A22013F256574E60052D7D6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B054255F563200619A21 /* Database.swift */; };
+		3A220143256574F20052D7D6 /* Slab in Frameworks */ = {isa = PBXBuildFile; productRef = 3A220142256574F20052D7D6 /* Slab */; };
+		3A22014F256577610052D7D6 /* PersonPicker.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3A22014E256577610052D7D6 /* PersonPicker.intentdefinition */; };
+		3A220150256577610052D7D6 /* PersonPicker.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3A22014E256577610052D7D6 /* PersonPicker.intentdefinition */; };
+		3A22015E256578520052D7D6 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22015D256578520052D7D6 /* IntentHandler.swift */; };
+		3A220162256578520052D7D6 /* PersonPickerIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A22015B256578520052D7D6 /* PersonPickerIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3A22016A2565786F0052D7D6 /* PersonPicker.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3A22014E256577610052D7D6 /* PersonPicker.intentdefinition */; };
+		3A22016E256578750052D7D6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B054255F563200619A21 /* Database.swift */; };
+		3A220172256578770052D7D6 /* Attestation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22008A2563C1870052D7D6 /* Attestation.swift */; };
+		3A220176256578790052D7D6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B04E255F55F900619A21 /* Person.swift */; };
+		3A22017A2565787C0052D7D6 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220098256408560052D7D6 /* Generator.swift */; };
+		3A22017F256578870052D7D6 /* Slab in Frameworks */ = {isa = PBXBuildFile; productRef = 3A22017E256578870052D7D6 /* Slab */; };
+		3A2201932565C78A0052D7D6 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A220098256408560052D7D6 /* Generator.swift */; };
 		3AE8B03E255F3BCC00619A21 /* PersonCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B03D255F3BCC00619A21 /* PersonCreator.swift */; };
 		3AE8B047255F492400619A21 /* PersonEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B046255F492400619A21 /* PersonEditor.swift */; };
 		3AE8B04F255F55F900619A21 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B04E255F55F900619A21 /* Person.swift */; };
@@ -22,6 +44,38 @@
 		3AE8B065255F5A6000619A21 /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B064255F5A6000619A21 /* PersonList.swift */; };
 		3AE8B074255F5F0700619A21 /* Slab in Frameworks */ = {isa = PBXBuildFile; productRef = 3AE8B073255F5F0700619A21 /* Slab */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A22012A256574770052D7D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A04ED262559FCBF00C8F41B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A220120256574760052D7D6;
+			remoteInfo = AttestationWidgetExtension;
+		};
+		3A220160256578520052D7D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A04ED262559FCBF00C8F41B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A22015A256578520052D7D6;
+			remoteInfo = PersonPickerIntentExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A2200BE25656D7E0052D7D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A22012C256574770052D7D6 /* AttestationWidgetExtension.appex in Embed App Extensions */,
+				3A220162256578520052D7D6 /* PersonPickerIntentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A04ED2B2559FCBF00C8F41B /* formTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formTestApp.swift; sourceTree = "<group>"; };
@@ -33,6 +87,21 @@
 		3A2200922563CF5A0052D7D6 /* AttestationCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationCreator.swift; sourceTree = "<group>"; };
 		3A220098256408560052D7D6 /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
 		3A22009C25641B300052D7D6 /* AttestationViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationViewer.swift; sourceTree = "<group>"; };
+		3A2200AE25656D7C0052D7D6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		3A2200B025656D7C0052D7D6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		3A2200D625656E7D0052D7D6 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = Library/Frameworks/IntentsUI.framework; sourceTree = DEVELOPER_DIR; };
+		3A220121256574760052D7D6 /* AttestationWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AttestationWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A220125256574760052D7D6 /* AttestationWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationWidget.swift; sourceTree = "<group>"; };
+		3A220127256574770052D7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A220129256574770052D7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A220132256574C40052D7D6 /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
+		3A220146256575C90052D7D6 /* Attestation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Attestation.entitlements; sourceTree = "<group>"; };
+		3A220149256576150052D7D6 /* AttestationWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AttestationWidgetExtension.entitlements; sourceTree = "<group>"; };
+		3A22014E256577610052D7D6 /* PersonPicker.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = PersonPicker.intentdefinition; sourceTree = "<group>"; };
+		3A22015B256578520052D7D6 /* PersonPickerIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PersonPickerIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A22015D256578520052D7D6 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3A22015F256578520052D7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A220169256578640052D7D6 /* PersonPickerIntentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonPickerIntentExtension.entitlements; sourceTree = "<group>"; };
 		3AE8B03D255F3BCC00619A21 /* PersonCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCreator.swift; sourceTree = "<group>"; };
 		3AE8B046255F492400619A21 /* PersonEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditor.swift; sourceTree = "<group>"; };
 		3AE8B04E255F55F900619A21 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -51,14 +120,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A22011E256574760052D7D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A220123256574760052D7D6 /* SwiftUI.framework in Frameworks */,
+				3A220143256574F20052D7D6 /* Slab in Frameworks */,
+				3A220122256574760052D7D6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A220158256578520052D7D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A22017F256578870052D7D6 /* Slab in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3A04ED252559FCBF00C8F41B = {
 			isa = PBXGroup;
 			children = (
+				3A220149256576150052D7D6 /* AttestationWidgetExtension.entitlements */,
+				3A220146256575C90052D7D6 /* Attestation.entitlements */,
 				3AE8B06F255F5E7400619A21 /* Slab */,
 				3A04ED2A2559FCBF00C8F41B /* Source */,
+				3A220124256574760052D7D6 /* AttestationWidget */,
+				3A22015C256578520052D7D6 /* PersonPickerIntentExtension */,
 				3A04ED332559FCC100C8F41B /* Products */,
 				3AE8B072255F5F0700619A21 /* Frameworks */,
 			);
@@ -81,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				3A04ED322559FCC100C8F41B /* Attestation.app */,
+				3A220121256574760052D7D6 /* AttestationWidgetExtension.appex */,
+				3A22015B256578520052D7D6 /* PersonPickerIntentExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +186,28 @@
 				3A22009C25641B300052D7D6 /* AttestationViewer.swift */,
 			);
 			path = Attestations;
+			sourceTree = "<group>";
+		};
+		3A220124256574760052D7D6 /* AttestationWidget */ = {
+			isa = PBXGroup;
+			children = (
+				3A220125256574760052D7D6 /* AttestationWidget.swift */,
+				3A220127256574770052D7D6 /* Assets.xcassets */,
+				3A220129256574770052D7D6 /* Info.plist */,
+				3A220132256574C40052D7D6 /* WidgetContent.swift */,
+				3A22014E256577610052D7D6 /* PersonPicker.intentdefinition */,
+			);
+			path = AttestationWidget;
+			sourceTree = "<group>";
+		};
+		3A22015C256578520052D7D6 /* PersonPickerIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3A220169256578640052D7D6 /* PersonPickerIntentExtension.entitlements */,
+				3A22015D256578520052D7D6 /* IntentHandler.swift */,
+				3A22015F256578520052D7D6 /* Info.plist */,
+			);
+			path = PersonPickerIntentExtension;
 			sourceTree = "<group>";
 		};
 		3AE8B04D255F55ED00619A21 /* Model */ = {
@@ -136,6 +251,9 @@
 		3AE8B072255F5F0700619A21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A2200AE25656D7C0052D7D6 /* WidgetKit.framework */,
+				3A2200B025656D7C0052D7D6 /* SwiftUI.framework */,
+				3A2200D625656E7D0052D7D6 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -150,10 +268,13 @@
 				3A04ED2E2559FCC100C8F41B /* Sources */,
 				3A04ED2F2559FCC100C8F41B /* Frameworks */,
 				3A04ED302559FCC100C8F41B /* Resources */,
+				3A2200BE25656D7E0052D7D6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A22012B256574770052D7D6 /* PBXTargetDependency */,
+				3A220161256578520052D7D6 /* PBXTargetDependency */,
 			);
 			name = Attestation;
 			packageProductDependencies = (
@@ -163,17 +284,63 @@
 			productReference = 3A04ED322559FCC100C8F41B /* Attestation.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3A220120256574760052D7D6 /* AttestationWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A22012D256574770052D7D6 /* Build configuration list for PBXNativeTarget "AttestationWidgetExtension" */;
+			buildPhases = (
+				3A22011D256574760052D7D6 /* Sources */,
+				3A22011E256574760052D7D6 /* Frameworks */,
+				3A22011F256574760052D7D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AttestationWidgetExtension;
+			packageProductDependencies = (
+				3A220142256574F20052D7D6 /* Slab */,
+			);
+			productName = AttestationWidgetExtension;
+			productReference = 3A220121256574760052D7D6 /* AttestationWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3A22015A256578520052D7D6 /* PersonPickerIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A220163256578520052D7D6 /* Build configuration list for PBXNativeTarget "PersonPickerIntentExtension" */;
+			buildPhases = (
+				3A220157256578520052D7D6 /* Sources */,
+				3A220158256578520052D7D6 /* Frameworks */,
+				3A220159256578520052D7D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersonPickerIntentExtension;
+			packageProductDependencies = (
+				3A22017E256578870052D7D6 /* Slab */,
+			);
+			productName = PersonPickerIntentExtension;
+			productReference = 3A22015B256578520052D7D6 /* PersonPickerIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		3A04ED262559FCBF00C8F41B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					3A04ED312559FCC100C8F41B = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					3A220120256574760052D7D6 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					3A22015A256578520052D7D6 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -191,6 +358,8 @@
 			projectRoot = "";
 			targets = (
 				3A04ED312559FCC100C8F41B /* Attestation */,
+				3A220120256574760052D7D6 /* AttestationWidgetExtension */,
+				3A22015A256578520052D7D6 /* PersonPickerIntentExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +370,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A04ED422559FCC100C8F41B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A22011F256574760052D7D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A220128256574770052D7D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A220159256578520052D7D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,15 +402,57 @@
 				3A22009D25641B300052D7D6 /* AttestationViewer.swift in Sources */,
 				3AE8B04F255F55F900619A21 /* Person.swift in Sources */,
 				3A22008B2563C1870052D7D6 /* Attestation.swift in Sources */,
+				3A22014F256577610052D7D6 /* PersonPicker.intentdefinition in Sources */,
 				3AE8B055255F563200619A21 /* Database.swift in Sources */,
 				3AE8B060255F594600619A21 /* PersonForm.swift in Sources */,
 				3AE8B03E255F3BCC00619A21 /* PersonCreator.swift in Sources */,
+				3A220133256574C40052D7D6 /* WidgetContent.swift in Sources */,
 				3A220099256408560052D7D6 /* Generator.swift in Sources */,
 				3A2200932563CF5A0052D7D6 /* AttestationCreator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A22011D256574760052D7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A22013C256574E30052D7D6 /* Attestation.swift in Sources */,
+				3A220139256574E10052D7D6 /* Person.swift in Sources */,
+				3A220126256574760052D7D6 /* AttestationWidget.swift in Sources */,
+				3A220150256577610052D7D6 /* PersonPicker.intentdefinition in Sources */,
+				3A22017A2565787C0052D7D6 /* Generator.swift in Sources */,
+				3A22013F256574E60052D7D6 /* Database.swift in Sources */,
+				3A220134256574C40052D7D6 /* WidgetContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A220157256578520052D7D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A220176256578790052D7D6 /* Person.swift in Sources */,
+				3A220172256578770052D7D6 /* Attestation.swift in Sources */,
+				3A22016E256578750052D7D6 /* Database.swift in Sources */,
+				3A2201932565C78A0052D7D6 /* Generator.swift in Sources */,
+				3A22015E256578520052D7D6 /* IntentHandler.swift in Sources */,
+				3A22016A2565786F0052D7D6 /* PersonPicker.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A22012B256574770052D7D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A220120256574760052D7D6 /* AttestationWidgetExtension */;
+			targetProxy = 3A22012A256574770052D7D6 /* PBXContainerItemProxy */;
+		};
+		3A220161256578520052D7D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A22015A256578520052D7D6 /* PersonPickerIntentExtension */;
+			targetProxy = 3A220160256578520052D7D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3A04ED442559FCC100C8F41B /* Debug */ = {
@@ -345,8 +571,10 @@
 		3A04ED472559FCC100C8F41B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Attestation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7D5NQS3DMM;
 				ENABLE_PREVIEWS = YES;
@@ -367,8 +595,10 @@
 		3A04ED482559FCC100C8F41B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Attestation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7D5NQS3DMM;
 				ENABLE_PREVIEWS = YES;
@@ -381,6 +611,100 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation;
 				PRODUCT_NAME = Attestation;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A22012E256574770052D7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AttestationWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5NQS3DMM;
+				INFOPLIST_FILE = AttestationWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A22012F256574770052D7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = AttestationWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5NQS3DMM;
+				INFOPLIST_FILE = AttestationWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A220164256578520052D7D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PersonPickerIntentExtension/PersonPickerIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5NQS3DMM;
+				INFOPLIST_FILE = PersonPickerIntentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation.PersonPickerIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A220165256578520052D7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PersonPickerIntentExtension/PersonPickerIntentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D5NQS3DMM;
+				INFOPLIST_FILE = PersonPickerIntentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.uad.attestation.PersonPickerIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -408,9 +732,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3A22012D256574770052D7D6 /* Build configuration list for PBXNativeTarget "AttestationWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A22012E256574770052D7D6 /* Debug */,
+				3A22012F256574770052D7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A220163256578520052D7D6 /* Build configuration list for PBXNativeTarget "PersonPickerIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A220164256578520052D7D6 /* Debug */,
+				3A220165256578520052D7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A220142256574F20052D7D6 /* Slab */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Slab;
+		};
+		3A22017E256578870052D7D6 /* Slab */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Slab;
+		};
 		3AE8B073255F5F0700619A21 /* Slab */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Slab;

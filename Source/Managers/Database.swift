@@ -1,5 +1,6 @@
 import Foundation
 import Slab
+import WidgetKit
 
 final class Database: ObservableObject {
     static let shared = Database()
@@ -140,6 +141,19 @@ final class Database: ObservableObject {
         attestations.filter({ $0.recurringDays.isNotEmpty }).sorted(by: ↑\.leavingTime.timeIntervalSinceMidnight)
     }
     
+    func validAttestation(for person: Person) -> Attestation? {
+        // prioritize non-recurring attestations
+        if let nonRecurring = attestations.filter({ $0.personID == person.id && $0.recurringDays.isEmpty && $0.leavingTime.isPast }).sorted(by: <).last {
+            return nonRecurring
+        }
+        
+        // find all matching recurring attestations for today
+        let dayIndex = (Calendar.current.component(.weekday, from: Date()) + 6) % 7
+        let timeOfDay = Date().timeIntervalSinceMidnight
+        let recurring = attestations.filter({ $0.personID == person.id && $0.recurringDays.contains(dayIndex) && $0.leavingTime.timeIntervalSinceMidnight <= timeOfDay }).sorted(by: ↑\.leavingTime.timeIntervalSinceMidnight)
+        return recurring.last
+    }
+    
     //MARK: - Guards
     
     func errorsPreventingAddition(of new: Person) -> Errors<Person> {
@@ -176,6 +190,9 @@ final class Database: ObservableObject {
             do {
                 let data = try self.encoder.encode(self.people)
                 try data.write(to: self.peopleURL)
+                DispatchQueue.main.async {
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
             }
             catch {}
         }
@@ -187,13 +204,16 @@ final class Database: ObservableObject {
             do {
                 let data = try self.encoder.encode(self.attestations)
                 try data.write(to: self.attestationsURL)
+                DispatchQueue.main.async {
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
             }
             catch {}
         }
     }
     
-    fileprivate let peopleURL: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("people", conformingTo: .json)
-    fileprivate let attestationsURL: URL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!.appendingPathComponent("attestations", conformingTo: .json)
+    fileprivate let peopleURL: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.io.uad.attestation.contents")!.appendingPathComponent("people", conformingTo: .json)
+    fileprivate let attestationsURL: URL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.io.uad.attestation.contents")!.appendingPathComponent("attestations", conformingTo: .json)
     
     fileprivate let encoder = JSONEncoder()
     fileprivate let decoder = JSONDecoder()

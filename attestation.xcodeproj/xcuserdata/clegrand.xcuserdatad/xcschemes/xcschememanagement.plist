@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>AttestationWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PersonPickerIntentExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>formTest (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,24 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3A04ED312559FCC100C8F41B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A220120256574760052D7D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A22015A256578520052D7D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

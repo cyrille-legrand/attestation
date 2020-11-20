@@ -35,22 +35,15 @@ struct AttestationViewer: View {
     @State private var displayMode = 0
     
     init(attestation: Attestation, person: Person) {
-        guard let qr = Generator.qrCode(attestation, person) else { fatalError() }
-        guard let pdf = Generator.pdf(attestation, person) else { fatalError() }
-        
-        self.qr = qr
-        self.pdf = pdf
         self.attestation = attestation
         self.person = person
         
-        // Make recurring attestation valid for today!
-        // Woohoo I'm such an anarchist.
-        if attestation.recurringDays.isNotEmpty {
-            let h = Calendar.current.component(.hour, from: attestation.leavingTime)
-            let m = Calendar.current.component(.minute, from: attestation.leavingTime)
-            self.attestation.leavingTime = Calendar.current.date(bySettingHour: h, minute: m, second: 0, of: Date())!
-            self.attestation.creationTime = self.attestation.leavingTime
-        }
+        self.attestation.makeValidForToday()
+        guard let qr = Generator.qrCode(self.attestation, self.person) else { fatalError() }
+        guard let pdf = Generator.pdf(self.attestation, self.person) else { fatalError() }
+        
+        self.qr = qr
+        self.pdf = pdf
     }
     
     

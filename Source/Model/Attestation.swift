@@ -45,6 +45,16 @@ extension Attestation {
     var isCurrent: Bool { leavingTime.isPast && (returnTime?.isFuture ?? leavingTime.isToday) }
     var isPast: Bool { returnTime?.isPast ?? (leavingTime.isPast && !leavingTime.isToday)}
     var isFuture: Bool { leavingTime.isFuture }
+    
+    mutating func makeValidForToday() {
+        //I'm such an anarchist.
+        if recurringDays.isNotEmpty {
+            let h = Calendar.current.component(.hour, from: leavingTime)
+            let m = Calendar.current.component(.minute, from: leavingTime)
+            leavingTime = Calendar.current.date(bySettingHour: h, minute: m, second: 0, of: Date())!
+            creationTime = leavingTime
+        }
+    }
 }
 
 
@@ -80,6 +90,20 @@ extension Reason {
             case .summons: return "Service public / Convocation"
             case .missions: return "Mission publique"
             case .children: return "Enfants (école, crèche, …)"
+        }
+    }
+    
+    var titleForWidget: String {
+        switch self {
+            case .work: return "Travail"
+            case .purchases: return "Courses"
+            case .health: return "Santé"
+            case .family: return "Famille"
+            case .handicap: return "Handicap"
+            case .walk: return "Promenade"
+            case .summons: return "Convocation"
+            case .missions: return "Mission"
+            case .children: return "Enfants"
         }
     }
     

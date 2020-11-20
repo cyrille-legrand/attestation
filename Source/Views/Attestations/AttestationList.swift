@@ -38,11 +38,13 @@ struct AttestationList: View {
             }
             else {
                 List {
-                    
                     if database.nonRecurringAttestations.isNotEmpty {
                         Section(header: Text("Ponctuelles") ) {
                             ForEach(database.nonRecurringAttestations, id: \.id) { attestation in
-                                AttestationCard(attestation: attestation, person: database.person(with: attestation.personID)!)
+                                let person = database.person(with: attestation.personID)!
+//                                let isValid = database.validAttestation(for: person)?.id == attestation.id
+                                AttestationCard(attestation: attestation, person: person)
+//                                    .font(Font.body.weight(isValid ? .bold : .regular))
                             }
                             .onDelete(perform: deleteNonRecurring)
                         }
@@ -51,7 +53,10 @@ struct AttestationList: View {
                     if database.recurringAttestations.isNotEmpty {
                         Section(header: Text("Récurrentes") ) {
                             ForEach(database.recurringAttestations, id: \.id) { attestation in
-                                AttestationCard(attestation: attestation, person: database.person(with: attestation.personID)!)
+                                let person = database.person(with: attestation.personID)!
+//                                let isValid = database.validAttestation(for: person)?.id == attestation.id
+                                AttestationCard(attestation: attestation, person: person)
+//                                    .font(Font.body.weight(isValid ? .bold : .regular))
                             }
                             .onDelete(perform: deleteRecurring)
                         }
