@@ -16,6 +16,10 @@ extension Person {
     var fullName: String {
         [firstName, lastName].joined(separator: " ")
     }
+    
+    var fullAddress: String {
+        [address, zipcode, city].joined(separator: " ")
+    }
 }
 
 extension Person: Validable {
